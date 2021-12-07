@@ -1,18 +1,17 @@
-﻿using AssemblyBrowser;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assembly
+namespace AssemblyBrowser
 {
     public enum ItemType
     {
         Field, Property, Method, Ctor
     }
 
-    class Info
+    public class Info
     {
         private string assemblyName;
         public readonly Dictionary<string, Record> namespaces = new();

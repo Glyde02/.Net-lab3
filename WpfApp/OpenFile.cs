@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace WPF
+namespace WpfApp
 {
-    public class OpenFile
+    public class OpenFile : ICommand
     {
         private Action execute;
         private Func<object, bool> canExecute;

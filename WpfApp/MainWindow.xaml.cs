@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace lab3
+namespace WpfApp
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class PageViewModel : System.Windows.Window
+    public partial class MainWindow : Window
     {
-        public PageViewModel()
+        public MainWindow()
         {
             InitializeComponent();
         }
