@@ -19,12 +19,11 @@ namespace AssemblyBrowser
                 if (namespaceName == null)
                     namespaceName = "No namespace";
 
-                foreach (var f in
-                              type.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static))
+                foreach (var f in type.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static))
                 {
-                    assemblyInfo.AddItemToLastAddedType(
+                    Info.AddItemToLastAddedType(
                           namespaceName,
-                          new Node(f.Name + " : " + f.FieldType),
+                          new Record(f.Name + " : " + f.FieldType),
                           ItemType.Field);
                 }
 
@@ -38,7 +37,7 @@ namespace AssemblyBrowser
     public class Record
     {
         public string text { get;  }
-        public List<Record> records { get; }
+        public List<Record> records { get; set; }
 
         public Record(string text)
         {
