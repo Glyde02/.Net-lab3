@@ -1,0 +1,22 @@
+﻿<Window x:Class="lab3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="415.455">
+    <Grid Background="#FFB09A60">
+        <Menu Background="#FF3C828D">
+            <MenuItem Header="Load assembly file" Command="{Binding OpenSelectAssemblyDialog}"/>
+        </Menu>
+        <TreeView ItemsSource="{Binding Data}" Margin="0 15 0 0 "
+                  HorizontalAlignment="Left" Width="785" Background="#FF467D80">
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{Binding Path=Nodes}">
+                    <TextBlock Text="{Binding Text}" />
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
+    </Grid>
+</Window>
