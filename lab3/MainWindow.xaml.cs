@@ -18,9 +18,9 @@ namespace lab3
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainPage : System.Windows.Window
     {
-        public MainWindow()
+        public MainPage()
         {
             InitializeComponent();
         }
