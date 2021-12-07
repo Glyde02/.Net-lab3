@@ -7,9 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Assembly\AssemblyBrowser.csproj" />
+    <ProjectReference Include="..\lab3\AssemblyBrowsr\AssemblyBrowser.csproj" />
   </ItemGroup>
-
-
 
 </Project>
